@@ -1,0 +1,144 @@
+$main-color: #4ECFD3;
+$dark-color: #061826;
+$light-color: #8cecf0;
+*
+{
+    padding: 0;
+    margin: 0;
+}
+html
+{
+    scroll-behavior: smooth;
+}
+body
+{
+    background-color: $dark-color;
+    display: flex;
+}
+a
+{
+    text-decoration: none;
+}
+nav
+{
+    background-color: white;
+    width: 6rem;
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    padding: 0 2rem;
+    align-items: center;
+    justify-content: space-around;
+    position: sticky;
+    top: 0;
+    &>a,&>a>img
+    {
+        height: 4.5rem;
+        width: 4.5rem;
+        transition: .3s ease-out;
+        &:hover{
+            transform: scale(110%);
+            position: relative;
+            top: 1px;
+        }
+    }
+}
+
+article
+{
+    display: flex;
+    flex-direction: row;
+    display: flex;
+    flex-direction: column;
+    gap: 8rem;
+    padding: 2rem 4rem;
+    align-items: center;
+    margin: auto;
+    max-width: 80%;
+    justify-content: center;
+    &>div
+    {
+        width: 90%;
+    }
+}
+
+#header
+{
+    color: white;
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &>h1
+    {
+        font-family: 'Roboto Serif', sans-serif;
+        font-weight: 300;
+        font-size: 500%;
+        padding: 1rem 0;
+    }
+    &>h2
+    {
+        padding: 1rem 0;
+        font-family: 'Roboto Serif', sans-serif;
+        font-weight: 200;
+        font-size: 300%;
+        &>span
+        {
+            font-size: 150%;
+            font-family: 'Sacramento', cursive;
+            &::after
+            {
+                content: '';
+                width: 25px;
+                height: 5px;
+                
+            }
+        }
+    }
+    &>h3
+    {
+        padding: 1rem 0;
+        font-family: 'Roboto Serif', sans-serif;
+        font-weight: 200;
+        font-size: 150%;
+    }
+}
+
+#p-info
+{
+    color: white;
+    padding: 2rem;
+    display: flex;
+    flex-direction: row;
+    background: linear-gradient(300deg, rgba(0,0,0,0) 30%, rgba(78,207,211,0.1) 60%, rgba(78,207,211,0.3) 100%);
+    gap: 1rem;
+    &>img
+    {
+        height: 40rem;
+        box-shadow: $main-color 0 0 1rem;
+        border-radius: 3px;
+        cursor: pointer;
+        transition: 0.3s ease-out;
+        &:hover
+        {
+            transform: scale(102%);
+            box-shadow: $main-color 0 0 1.5rem;
+        }
+    }
+    &>div
+    {
+        padding: 2rem 1rem;
+        &>h1
+        {
+            font-size: 350%;
+            font-family: 'Roboto Serif', sans-serif;
+            font-weight: 200;
+        }
+        &>p
+        {
+            padding-left: 1rem;
+            font-size: 200%;
+            font-family: 'Cairo', sans-serif;
+        }
+    }
+}

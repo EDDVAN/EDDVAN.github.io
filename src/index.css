@@ -1,0 +1,177 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #061826;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+a {
+  text-decoration: none;
+}
+
+nav {
+  background-color: white;
+  width: 6rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100vh;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 0 2rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+
+nav > a, nav > a > img {
+  height: 4.5rem;
+  width: 4.5rem;
+  -webkit-transition: .3s ease-out;
+  transition: .3s ease-out;
+}
+
+nav > a:hover, nav > a > img:hover {
+  -webkit-transform: scale(110%);
+          transform: scale(110%);
+  position: relative;
+  top: 1px;
+}
+
+article {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  gap: 8rem;
+  padding: 2rem 4rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: auto;
+  max-width: 80%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+article > div {
+  width: 90%;
+}
+
+#header {
+  color: white;
+  padding-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#header > h1 {
+  font-family: 'Roboto Serif', sans-serif;
+  font-weight: 300;
+  font-size: 500%;
+  padding: 1rem 0;
+}
+
+#header > h2 {
+  padding: 1rem 0;
+  font-family: 'Roboto Serif', sans-serif;
+  font-weight: 200;
+  font-size: 300%;
+}
+
+#header > h2 > span {
+  font-size: 150%;
+  font-family: 'Sacramento', cursive;
+}
+
+#header > h2 > span::after {
+  content: '';
+  width: 25px;
+  height: 5px;
+}
+
+#header > h3 {
+  padding: 1rem 0;
+  font-family: 'Roboto Serif', sans-serif;
+  font-weight: 200;
+  font-size: 150%;
+}
+
+#p-info {
+  color: white;
+  padding: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  background: linear-gradient(300deg, rgba(0, 0, 0, 0) 30%, rgba(78, 207, 211, 0.1) 60%, rgba(78, 207, 211, 0.3) 100%);
+  gap: 1rem;
+}
+
+#p-info > img {
+  height: 40rem;
+  -webkit-box-shadow: #4ECFD3 0 0 1rem;
+          box-shadow: #4ECFD3 0 0 1rem;
+  border-radius: 3px;
+  cursor: pointer;
+  -webkit-transition: 0.3s ease-out;
+  transition: 0.3s ease-out;
+}
+
+#p-info > img:hover {
+  -webkit-transform: scale(102%);
+          transform: scale(102%);
+  -webkit-box-shadow: #4ECFD3 0 0 1.5rem;
+          box-shadow: #4ECFD3 0 0 1.5rem;
+}
+
+#p-info > div {
+  padding: 2rem 1rem;
+}
+
+#p-info > div > h1 {
+  font-size: 350%;
+  font-family: 'Roboto Serif', sans-serif;
+  font-weight: 200;
+}
+
+#p-info > div > p {
+  padding-left: 1rem;
+  font-size: 200%;
+  font-family: 'Cairo', sans-serif;
+}
+/*# sourceMappingURL=index.css.map */
