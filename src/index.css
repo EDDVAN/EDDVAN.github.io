@@ -20,7 +20,7 @@ a {
 
 nav {
   background-color: white;
-  width: 6rem;
+  width: 5rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -29,7 +29,6 @@ nav {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding: 0 2rem;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -38,20 +37,60 @@ nav {
   position: -webkit-sticky;
   position: sticky;
   top: 0;
-}
-
-nav > a, nav > a > img {
-  height: 4.5rem;
-  width: 4.5rem;
+  z-index: 2;
   -webkit-transition: .3s ease-out;
   transition: .3s ease-out;
 }
 
-nav > a:hover, nav > a > img:hover {
-  -webkit-transform: scale(110%);
-          transform: scale(110%);
+nav:hover {
+  width: 25rem;
+}
+
+nav:hover > a > h3 {
+  display: block;
+  font-size: 150%;
+}
+
+nav > a {
+  width: 100%;
+  height: 4rem;
+  padding: 1rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: 3s ease-in;
+  transition: 3s ease-in;
+}
+
+nav > a:hover > * {
+  -webkit-transform: scale(105%);
+          transform: scale(105%);
   position: relative;
   top: 1px;
+}
+
+nav > a > h3 {
+  display: none;
+  -webkit-transition: .3s ease-out;
+  transition: .3s ease-out;
+  font-size: xx-small;
+  font-family: 'Roboto Serif', sans-serif;
+  color: #061826;
+  padding-left: 1rem;
+}
+
+nav > a > img {
+  height: 3rem;
+  width: 3rem;
+  -webkit-transition: .3s ease-out;
+  transition: .3s ease-out;
+  top: 0.2rem;
 }
 
 article {
@@ -140,6 +179,7 @@ article > div {
           flex-direction: row;
   background: linear-gradient(300deg, rgba(0, 0, 0, 0) 30%, rgba(78, 207, 211, 0.1) 60%, rgba(78, 207, 211, 0.3) 100%);
   gap: 1rem;
+  z-index: 5;
 }
 
 #p-info > img {
@@ -150,6 +190,7 @@ article > div {
   cursor: pointer;
   -webkit-transition: 0.3s ease-out;
   transition: 0.3s ease-out;
+  z-index: -1;
 }
 
 #p-info > img:hover {
@@ -173,5 +214,142 @@ article > div {
   padding-left: 1rem;
   font-size: 200%;
   font-family: 'Cairo', sans-serif;
+}
+
+#quali {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 2rem;
+  color: white;
+  font-family: 'Roboto Serif', sans-serif;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#quali > h1 {
+  font-size: 300%;
+  padding: 1.5rem;
+  padding-bottom: 2rem;
+}
+
+#quali > #Q-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 1rem;
+  width: 100%;
+  font-size: 150%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+#quali > #Q-container > div {
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(30%, rgba(0, 0, 0, 0)), color-stop(60%, rgba(78, 207, 211, 0.1)), to(rgba(78, 207, 211, 0.3)));
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0) 30%, rgba(78, 207, 211, 0.1) 60%, rgba(78, 207, 211, 0.3) 100%);
+  padding: 1rem 2rem;
+}
+
+#quali > #Q-container > div > h2 {
+  padding-top: .2rem;
+}
+
+#quali > #Q-container > div > ul {
+  list-style: georgian;
+  padding-left: 5rem;
+}
+
+#quali > #Q-container > div > ul > li {
+  padding: .5rem 0;
+}
+
+#quali > #tech {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 5rem;
+  width: 100%;
+}
+
+#quali > #tech > div {
+  padding-top: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 5rem;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#quali > #tech > div > img {
+  -webkit-filter: saturate(0);
+          filter: saturate(0);
+  height: 10rem;
+  -webkit-transition: .3s ease-out;
+  transition: .3s ease-out;
+  cursor: pointer;
+}
+
+#quali > #tech > div > img:hover {
+  -webkit-transform: scale(105%);
+          transform: scale(105%);
+  -webkit-filter: saturate(1);
+          filter: saturate(1);
+}
+
+#quali > #tech > div > #jsimg {
+  -webkit-filter: saturate(0) brightness(65%);
+          filter: saturate(0) brightness(65%);
+}
+
+#quali > #tech > div > #jsimg:hover {
+  -webkit-filter: saturate(1);
+          filter: saturate(1);
+}
+
+#quali > #tech > div > #aspx {
+  -webkit-filter: saturate(0) brightness(80%);
+          filter: saturate(0) brightness(80%);
+}
+
+#quali > #tech > div > #aspx:hover {
+  -webkit-filter: saturate(1);
+          filter: saturate(1);
+}
+
+#quali > #tech > div > #sql {
+  -webkit-filter: saturate(0) brightness(120%);
+          filter: saturate(0) brightness(120%);
+}
+
+#quali > #tech > div > #sql:hover {
+  -webkit-filter: saturate(1) brightness(120%);
+          filter: saturate(1) brightness(120%);
 }
 /*# sourceMappingURL=index.css.map */

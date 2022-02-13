@@ -1,6 +1,9 @@
 $main-color: #4ECFD3;
 $dark-color: #061826;
 $light-color: #8cecf0;
+$main-half: rgba(78,207,211,0.3);
+$main-less: rgba(78,207,211,0.1);
+
 *
 {
     padding: 0;
@@ -22,24 +25,55 @@ a
 nav
 {
     background-color: white;
-    width: 6rem;
+    width: 5rem;
     display: flex;
     height: 100vh;
     flex-direction: column;
-    padding: 0 2rem;
     align-items: center;
     justify-content: space-around;
     position: sticky;
     top: 0;
-    &>a,&>a>img
+    z-index: 2;
+    transition: .3s ease-out;
+    &:hover
     {
-        height: 4.5rem;
-        width: 4.5rem;
-        transition: .3s ease-out;
-        &:hover{
-            transform: scale(110%);
+        width: 25rem;
+        &>a>h3
+        {
+            display: block;
+            font-size: 150%;
+        }
+    }
+    &>a
+    {
+        width: 100%;
+        height: 4rem;
+        padding: 1rem 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: 3s ease-in;
+        &:hover>*
+        {
+            transform: scale(105%);
             position: relative;
             top: 1px;
+        }
+        &>h3
+        {
+            display: none;
+            transition: .3s ease-out;
+            font-size: xx-small;
+            font-family: 'Roboto Serif', sans-serif;
+            color: $dark-color;
+            padding-left: 1rem;
+        }
+        &>img
+        {
+            height: 3rem;
+            width: 3rem;
+            transition: .3s ease-out;
+            top: 0.2rem;
         }
     }
 }
@@ -110,8 +144,9 @@ article
     padding: 2rem;
     display: flex;
     flex-direction: row;
-    background: linear-gradient(300deg, rgba(0,0,0,0) 30%, rgba(78,207,211,0.1) 60%, rgba(78,207,211,0.3) 100%);
+    background: linear-gradient(300deg, rgba(0,0,0,0) 30%, $main-less 60%, $main-half 100%);
     gap: 1rem;
+    z-index: 5;
     &>img
     {
         height: 40rem;
@@ -119,6 +154,7 @@ article
         border-radius: 3px;
         cursor: pointer;
         transition: 0.3s ease-out;
+        z-index: -1;
         &:hover
         {
             transform: scale(102%);
@@ -139,6 +175,103 @@ article
             padding-left: 1rem;
             font-size: 200%;
             font-family: 'Cairo', sans-serif;
+        }
+    }
+}
+
+#quali
+{
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    color: white;
+    font-family: 'Roboto Serif', sans-serif;
+    justify-content: center;
+    align-items: center;
+    &>h1
+    {
+        font-size: 300%;
+        padding: 1.5rem;
+        padding-bottom: 2rem;
+    }
+    &>#Q-container
+    {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        width: 100%;
+        font-size: 150%;
+        justify-content: space-around;
+        flex-grow: 1;
+        &>div
+        {
+            background: linear-gradient(0deg, rgba(0,0,0,0) 30%, $main-less 60%, $main-half 100%);
+            padding: 1rem 2rem;
+            &>h2
+            {
+                padding-top: .2rem;
+            }
+            &>ul
+            {
+                list-style: georgian;
+                padding-left: 5rem;
+                &>li
+                {
+                    padding: .5rem 0;
+                }
+            }
+        }
+    }
+    &>#tech
+    {
+        display: flex;
+        flex-direction: column;
+        gap: 5rem;
+        width: 100%;
+        &>div
+        {
+            padding-top: 2rem;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: 5rem;
+            justify-content: space-between;
+            &>img
+            {
+                filter: saturate(0);
+                height: 10rem;
+                transition: .3s ease-out;
+                cursor: pointer;
+                &:hover
+                {
+                    transform: scale(105%);
+                    filter: saturate(1);
+                }
+            }
+            &>#jsimg
+            {
+                filter: saturate(0) brightness(65%);
+                &:hover
+                {
+                    filter: saturate(1);
+                }
+            }
+            &>#aspx
+            {
+                filter: saturate(0) brightness(80%);
+                &:hover
+                {
+                    filter: saturate(1);
+                }
+            }
+            &>#sql
+            {
+                filter: saturate(0) brightness(120%);
+                &:hover
+                {
+                    filter: saturate(1) brightness(120%);
+                }
+            }
         }
     }
 }
