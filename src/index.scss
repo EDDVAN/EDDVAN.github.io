@@ -120,12 +120,18 @@ article
         {
             font-size: 150%;
             font-family: 'Sacramento', cursive;
+            text-shadow: 0 0 .1rem $main-color;
+            transition: .5s ease-in;
+            color: $main-color;
             &::after
             {
                 content: '';
                 width: 25px;
                 height: 5px;
-                
+            }
+            &:hover
+            {
+                text-shadow: 0 0 1rem $main-color;
             }
         }
     }
@@ -203,6 +209,7 @@ article
         font-size: 150%;
         justify-content: space-around;
         flex-grow: 1;
+        margin-bottom: 10rem;
         &>div
         {
             background: linear-gradient(0deg, rgba(0,0,0,0) 30%, $main-less 60%, $main-half 100%);
@@ -234,6 +241,7 @@ article
             display: flex;
             flex-direction: row;
             flex-wrap: wrap;
+            flex-basis: 50%;
             gap: 5rem;
             justify-content: space-between;
             &>img
@@ -271,6 +279,128 @@ article
                 {
                     filter: saturate(1) brightness(120%);
                 }
+            }
+        }
+    }
+}
+
+#projects
+{
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    color: white;
+    font-family: 'Roboto Serif', sans-serif;
+    justify-content: center;
+    align-items: center;
+    &>h1
+    {
+        font-size: 300%;
+        padding: 1.5rem;
+        padding-bottom: 2rem;
+    }
+    &>div
+    {
+        display: flex;
+        width: 100%;
+        gap: 5rem;
+        justify-content: space-around;
+        &>div
+        {
+            width: 30rem;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            &>*
+            {
+                padding: 1rem 0;
+            }
+            &>h2
+            {
+                font-size: 200%;
+            }
+            &>img
+            {
+                width: 25rem;
+                padding: 2rem 2rem;
+                border-radius: 1rem;
+                transition: .5s ease-out;
+                cursor: pointer;
+                &:hover
+                {
+                    transform: scale(103%);
+                }
+            }
+            &>p
+            {
+                text-align: center;
+                font-size: 150%;
+                font-family: 'Cairo', sans-serif;
+            }
+        }
+    }
+}
+
+#contact
+{
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    color: white;
+    font-family: 'Roboto Serif', sans-serif;
+    justify-content: center;
+    align-items: center;
+    &>h1
+    {
+        font-size: 300%;
+        padding: 1.5rem;
+        padding-bottom: 2rem;
+    }
+    &>p
+    {
+        font-size: 200%;
+        font-family: 'Cairo', sans-serif;
+    }
+    &>div
+    {
+        display: flex;
+        gap: 3rem;
+        padding: 1rem;
+        padding-top: 5rem;
+        width: 100%;
+        justify-content: space-between;
+        &>a
+        {
+            font-size: 120%;
+            color: grey;
+            height: 10rem;
+            display: flex;
+            flex-direction: column;
+            justify-items: center;
+            align-items: center;
+            &>h3
+            {
+                transition: .5s ease-out;
+            }
+            &>img
+            {
+                margin-top: 1rem;
+                height: 10rem;
+                filter: saturate(0);
+                transition: .5s ease-out;
+              
+            }
+            &:hover>img
+            {
+                filter: saturate(1);
+                transform: scale(105%);
+            }
+            &:hover>h3
+            {
+                text-shadow: 0 0 .5rem $main-color;
+                color: $main-color;
+                transform: scale(105%);
             }
         }
     }
