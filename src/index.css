@@ -38,8 +38,8 @@ nav {
   position: sticky;
   top: 0;
   z-index: 2;
-  -webkit-transition: .3s ease-out;
-  transition: .3s ease-out;
+  -webkit-transition: 0.3s ease-out;
+  transition: 0.3s ease-out;
 }
 
 nav:hover {
@@ -77,10 +77,10 @@ nav > a:hover > * {
 
 nav > a > h3 {
   display: none;
-  -webkit-transition: .3s ease-out;
-  transition: .3s ease-out;
+  -webkit-transition: 0.3s ease-out;
+  transition: 0.3s ease-out;
   font-size: xx-small;
-  font-family: 'Roboto Serif', sans-serif;
+  font-family: "Roboto Serif", sans-serif;
   color: #061826;
   padding-left: 1rem;
 }
@@ -88,8 +88,8 @@ nav > a > h3 {
 nav > a > img {
   height: 3rem;
   width: 3rem;
-  -webkit-transition: .3s ease-out;
-  transition: .3s ease-out;
+  -webkit-transition: 0.3s ease-out;
+  transition: 0.3s ease-out;
   top: 0.2rem;
 }
 
@@ -136,7 +136,7 @@ article > div {
 }
 
 #header > h1 {
-  font-family: 'Roboto Serif', sans-serif;
+  font-family: "Roboto Serif", sans-serif;
   font-weight: 300;
   font-size: 500%;
   padding: 1rem 0;
@@ -144,33 +144,33 @@ article > div {
 
 #header > h2 {
   padding: 1rem 0;
-  font-family: 'Roboto Serif', sans-serif;
+  font-family: "Roboto Serif", sans-serif;
   font-weight: 200;
   font-size: 300%;
 }
 
 #header > h2 > span {
   font-size: 150%;
-  font-family: 'Sacramento', cursive;
-  text-shadow: 0 0 0.1rem #4ECFD3;
-  -webkit-transition: .5s ease-in;
-  transition: .5s ease-in;
-  color: #4ECFD3;
+  font-family: "Sacramento", cursive;
+  text-shadow: 0 0 0.1rem #4ecfd3;
+  -webkit-transition: 0.5s ease-in;
+  transition: 0.5s ease-in;
+  color: #4ecfd3;
 }
 
 #header > h2 > span::after {
-  content: '';
+  content: "";
   width: 25px;
   height: 5px;
 }
 
 #header > h2 > span:hover {
-  text-shadow: 0 0 1rem #4ECFD3;
+  text-shadow: 0 0 1rem #4ecfd3;
 }
 
 #header > h3 {
   padding: 1rem 0;
-  font-family: 'Roboto Serif', sans-serif;
+  font-family: "Roboto Serif", sans-serif;
   font-weight: 200;
   font-size: 150%;
 }
@@ -192,8 +192,8 @@ article > div {
 
 #p-info > img {
   height: 40rem;
-  -webkit-box-shadow: #4ECFD3 0 0 1rem;
-          box-shadow: #4ECFD3 0 0 1rem;
+  -webkit-box-shadow: #4ecfd3 0 0 1rem;
+          box-shadow: #4ecfd3 0 0 1rem;
   border-radius: 3px;
   cursor: pointer;
   -webkit-transition: 0.3s ease-out;
@@ -204,8 +204,8 @@ article > div {
 #p-info > img:hover {
   -webkit-transform: scale(102%);
           transform: scale(102%);
-  -webkit-box-shadow: #4ECFD3 0 0 1.5rem;
-          box-shadow: #4ECFD3 0 0 1.5rem;
+  -webkit-box-shadow: #4ecfd3 0 0 1.5rem;
+          box-shadow: #4ecfd3 0 0 1.5rem;
 }
 
 #p-info > div {
@@ -214,14 +214,14 @@ article > div {
 
 #p-info > div > h1 {
   font-size: 350%;
-  font-family: 'Roboto Serif', sans-serif;
+  font-family: "Roboto Serif", sans-serif;
   font-weight: 200;
 }
 
 #p-info > div > p {
   padding-left: 1rem;
   font-size: 200%;
-  font-family: 'Cairo', sans-serif;
+  font-family: "Cairo", sans-serif;
 }
 
 #quali {
@@ -234,7 +234,7 @@ article > div {
           flex-direction: column;
   padding: 2rem;
   color: white;
-  font-family: 'Roboto Serif', sans-serif;
+  font-family: "Roboto Serif", sans-serif;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -275,7 +275,7 @@ article > div {
 }
 
 #quali > #Q-container > div > h2 {
-  padding-top: .2rem;
+  padding-top: 0.2rem;
 }
 
 #quali > #Q-container > div > ul {
@@ -284,7 +284,7 @@ article > div {
 }
 
 #quali > #Q-container > div > ul > li {
-  padding: .5rem 0;
+  padding: 0.5rem 0;
 }
 
 #quali > #tech {
@@ -322,8 +322,8 @@ article > div {
   -webkit-filter: saturate(0);
           filter: saturate(0);
   height: 10rem;
-  -webkit-transition: .3s ease-out;
-  transition: .3s ease-out;
+  -webkit-transition: 0.3s ease-out;
+  transition: 0.3s ease-out;
   cursor: pointer;
 }
 
@@ -374,7 +374,7 @@ article > div {
           flex-direction: column;
   padding: 2rem;
   color: white;
-  font-family: 'Roboto Serif', sans-serif;
+  font-family: "Roboto Serif", sans-serif;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -428,8 +428,8 @@ article > div {
   width: 25rem;
   padding: 2rem 2rem;
   border-radius: 1rem;
-  -webkit-transition: .5s ease-out;
-  transition: .5s ease-out;
+  -webkit-transition: 0.5s ease-out;
+  transition: 0.5s ease-out;
   cursor: pointer;
 }
 
@@ -441,7 +441,7 @@ article > div {
 #projects > div > div > p {
   text-align: center;
   font-size: 150%;
-  font-family: 'Cairo', sans-serif;
+  font-family: "Cairo", sans-serif;
 }
 
 #contact {
@@ -454,7 +454,7 @@ article > div {
           flex-direction: column;
   padding: 2rem;
   color: white;
-  font-family: 'Roboto Serif', sans-serif;
+  font-family: "Roboto Serif", sans-serif;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -471,7 +471,7 @@ article > div {
 
 #contact > p {
   font-size: 200%;
-  font-family: 'Cairo', sans-serif;
+  font-family: "Cairo", sans-serif;
 }
 
 #contact > div {
@@ -505,8 +505,8 @@ article > div {
 }
 
 #contact > div > a > h3 {
-  -webkit-transition: .5s ease-out;
-  transition: .5s ease-out;
+  -webkit-transition: 0.5s ease-out;
+  transition: 0.5s ease-out;
 }
 
 #contact > div > a > img {
@@ -514,8 +514,8 @@ article > div {
   height: 10rem;
   -webkit-filter: saturate(0);
           filter: saturate(0);
-  -webkit-transition: .5s ease-out;
-  transition: .5s ease-out;
+  -webkit-transition: 0.5s ease-out;
+  transition: 0.5s ease-out;
 }
 
 #contact > div > a:hover > img {
@@ -526,9 +526,62 @@ article > div {
 }
 
 #contact > div > a:hover > h3 {
-  text-shadow: 0 0 0.5rem #4ECFD3;
-  color: #4ECFD3;
+  text-shadow: 0 0 0.5rem #4ecfd3;
+  color: #4ecfd3;
   -webkit-transform: scale(105%);
           transform: scale(105%);
+}
+
+@media only screen and (max-width: 1920px) {
+  /* For small widescreens: */
+  html {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 1280px) {
+  /* For smaller widescreens: */
+  html {
+    font-size: 10px;
+  }
+}
+
+@media only screen and (max-width: 1080px) {
+  /* For tablets: */
+  html {
+    font-size: 8px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  /* For mobile phones: */
+  html {
+    font-size: 8px;
+  }
+  nav {
+    width: 100%;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    height: 5rem;
+    position: absolute;
+  }
+  nav:hover {
+    width: 100%;
+  }
+  nav:hover > a > h3 {
+    display: none;
+  }
+  #p-info {
+    -ms-flex-wrap: wrap-reverse;
+        flex-wrap: wrap-reverse;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 /*# sourceMappingURL=index.css.map */
