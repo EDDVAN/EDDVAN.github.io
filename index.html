@@ -8,20 +8,34 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200&family=Roboto+Serif:wght@100;200;300&family=Roboto:wght@300;400&family=Sacramento&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="src/index.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="src/red-theme.css" class="alternate-style" title="red" disabled>
+    <link rel="stylesheet" href="src/green-theme.css" class="alternate-style" title="green" disabled>
+    <link rel="stylesheet" href="src/purple-theme.css" class="alternate-style" title="purple" disabled>
+    <link rel="stylesheet" href="src/light-theme.css" class="alternate-dark" title="light" disabled>
+    <script src="src/script.js"></script>
+    <title>Ali Bazizi</title>
+    <link rel="shortcut icon" href="src/images/abazizilogo.png" />
 </head>
 <body>
     <nav>
+        <a href="#p-info">
+            <img src="src/images/darkid.png" alt="Who am I" id="darkid"/>
+            <img src="src/images/lightid.png" alt="Who am I" id="lightid"/>
+            <h3>Who am I</h3>
+        </a>
         <a href="#quali">
-            <img src="src/images/diploma.png" alt="Lets Work Together"/>
+            <img src="src/images/darkcv.png" alt="Qualifications" id="darkcv">
+            <img src="src/images/lightcv.png" alt="Qualifications" id="lightcv"/>
             <h3>Qualifications</h3>
         </a>
         <a href="#projects">
-            <img src="src/images/padlock.png" alt="Lets Work Together"/>
+            <img src="src/images/darkproject.png" alt="Projects" id="darkproject"/>
+            <img src="src/images/lightproject.png" alt="Projects" id="lightproject"/>
             <h3>Projects</h3>
         </a>
         <a href="#contact">
-            <img src="src/images/handshake.png" alt="Lets Work Together"/>
+            <img src="src/images/darkcontact.png" alt="Lets Work Together" id="darkcontact"/>
+            <img src="src/images/lightcontact.png" alt="Lets Work Together" id="lightcontact"/>
             <h3>Contact</h3>
         </a>
     </nav>
@@ -163,5 +177,19 @@
             </div>
         </div>
     </article>
+    <div id="settings">
+        <div id="color-switcher">
+            <div id="blue" onclick="setActiveStyle('blue')"></div>
+            <div id="red" onclick="setActiveStyle('red')"></div>
+            <div id="green" onclick="setActiveStyle('green')"></div>
+            <div id="purple" onclick="setActiveStyle('purple')"></div>
+            <img src="src/images/brush.png" alt="brush" id="brush">
+            <img src="src/images/darkbrush.png" alt="brush" id="darkbrush">
+        </div>
+        <div id="dark-light">
+            <img src="src/images/moon.png" alt="moon" onclick="setDarkStyle('light')" id="moon">
+            <img src="src/images/fullmoon.png" alt="fullmoon" onclick="setDarkStyle('dark')" id="fullmoon">
+        </div>
+    </div>
 </body>
 </html>

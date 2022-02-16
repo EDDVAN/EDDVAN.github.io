@@ -1,0 +1,85 @@
+$main-color: #EF476F;
+$dark-color: #000000;
+$light-color: #ee7994;
+$main-half: #ef476e57;
+$main-less: #ef476e1c;
+
+* {
+  padding: 0;
+  margin: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background-color: $dark-color;
+  display: flex;
+}
+a {
+  text-decoration: none;
+}
+
+#header {
+  & > h2 {
+    & > span {
+      text-shadow: 0 0 0.1rem $main-color;
+      color: $main-color;
+      &:hover {
+        text-shadow: 0 0 1rem $main-color;
+      }
+    }
+  }
+}
+
+#p-info {
+  background: linear-gradient(
+    300deg,
+    rgba(0, 0, 0, 0) 30%,
+    $main-less 60%,
+    $main-half 100%
+  );
+  & > img {
+    box-shadow: $main-color 0 0 1rem;
+    &:hover {
+      box-shadow: $main-color 0 0 1.5rem;
+    }
+  }
+}
+
+#quali {
+  & > #Q-container {
+    & > div {
+      background: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0) 30%,
+        $main-less 60%,
+        $main-half 100%
+      );
+    }
+  }
+}
+#contact {
+  & > div {
+      &:hover > h3 {
+        text-shadow: 0 0 0.5rem $main-color;
+        color: $main-color;
+      }
+  }
+}
+
+#projects>div>div{
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0) 30%,
+    $main-less 60%,
+    $main-half 100%
+  );
+}
+
+::-webkit-scrollbar{
+  background-color: $dark-color;
+}
+::-webkit-scrollbar-thumb
+{
+  background-color: $main-color;
+}

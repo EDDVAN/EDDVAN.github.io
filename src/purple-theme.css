@@ -1,0 +1,66 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #000000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+a {
+  text-decoration: none;
+}
+
+#header > h2 > span {
+  text-shadow: 0 0 0.1rem #6F42C1;
+  color: #6F42C1;
+}
+
+#header > h2 > span:hover {
+  text-shadow: 0 0 1rem #6F42C1;
+}
+
+#p-info {
+  background: linear-gradient(300deg, rgba(0, 0, 0, 0) 30%, #6F42C11c 60%, #6f42c157 100%);
+}
+
+#p-info > img {
+  -webkit-box-shadow: #6F42C1 0 0 1rem;
+          box-shadow: #6F42C1 0 0 1rem;
+}
+
+#p-info > img:hover {
+  -webkit-box-shadow: #6F42C1 0 0 1.5rem;
+          box-shadow: #6F42C1 0 0 1.5rem;
+}
+
+#quali > #Q-container > div {
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(30%, rgba(0, 0, 0, 0)), color-stop(60%, #6F42C11c), to(#6f42c157));
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0) 30%, #6F42C11c 60%, #6f42c157 100%);
+}
+
+#contact > div:hover > h3 {
+  text-shadow: 0 0 0.5rem #6F42C1;
+  color: #6F42C1;
+}
+
+#projects > div > div {
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(30%, rgba(0, 0, 0, 0)), color-stop(60%, #6F42C11c), to(#6f42c157));
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0) 30%, #6F42C11c 60%, #6f42c157 100%);
+}
+
+::-webkit-scrollbar {
+  background-color: #000000;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #6F42C1;
+}
+/*# sourceMappingURL=purple-theme.css.map */

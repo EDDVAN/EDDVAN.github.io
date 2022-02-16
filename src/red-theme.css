@@ -1,0 +1,66 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #000000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+a {
+  text-decoration: none;
+}
+
+#header > h2 > span {
+  text-shadow: 0 0 0.1rem #EF476F;
+  color: #EF476F;
+}
+
+#header > h2 > span:hover {
+  text-shadow: 0 0 1rem #EF476F;
+}
+
+#p-info {
+  background: linear-gradient(300deg, rgba(0, 0, 0, 0) 30%, #ef476e1c 60%, #ef476e57 100%);
+}
+
+#p-info > img {
+  -webkit-box-shadow: #EF476F 0 0 1rem;
+          box-shadow: #EF476F 0 0 1rem;
+}
+
+#p-info > img:hover {
+  -webkit-box-shadow: #EF476F 0 0 1.5rem;
+          box-shadow: #EF476F 0 0 1.5rem;
+}
+
+#quali > #Q-container > div {
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(30%, rgba(0, 0, 0, 0)), color-stop(60%, #ef476e1c), to(#ef476e57));
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0) 30%, #ef476e1c 60%, #ef476e57 100%);
+}
+
+#contact > div:hover > h3 {
+  text-shadow: 0 0 0.5rem #EF476F;
+  color: #EF476F;
+}
+
+#projects > div > div {
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(30%, rgba(0, 0, 0, 0)), color-stop(60%, #ef476e1c), to(#ef476e57));
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0) 30%, #ef476e1c 60%, #ef476e57 100%);
+}
+
+::-webkit-scrollbar {
+  background-color: #000000;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #EF476F;
+}
+/*# sourceMappingURL=red-theme.css.map */
