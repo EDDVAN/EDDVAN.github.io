@@ -323,7 +323,7 @@ article {
     padding: 1rem;
     padding-top: 5rem;
     width: 100%;
-    justify-content: space-between;
+    justify-content: space-around;
     & > a {
       font-size: 120%;
       color: grey;
@@ -337,7 +337,7 @@ article {
       }
       & > img {
         margin-top: 1rem;
-        height: 10rem;
+        height: 6rem;
         filter: saturate(0);
         transition: 0.5s ease-out;
       }
@@ -396,5 +396,13 @@ article {
     flex-wrap: wrap-reverse;
     justify-content: center;
     align-items: center;
+  }
+  #projects>div
+  {
+    flex-direction: column;
+  }
+  #contact>div
+  {
+    flex-wrap: wrap;
   }
 }
