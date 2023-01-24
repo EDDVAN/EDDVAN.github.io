@@ -35,3 +35,15 @@ function slideLeft() {
   });
   selectedIndex = nextIndex;
 }
+
+document.addEventListener("keydown", (event) => {
+  if (event.keyCode === 39) {
+    slideRight();
+  }
+});
+
+document.addEventListener("keydown", (event) => {
+  if (event.keyCode === 37) {
+    slideLeft();
+  }
+});
